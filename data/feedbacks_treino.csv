@@ -1,0 +1,214 @@
+texto,classe
+"Não entendi nada dessa parte de recursão, muito difícil",frustrado
+"Travei completamente no exercício, não sei o que fazer",frustrado
+"Tá impossível, já tentei várias vezes e nada",frustrado
+"Que matéria horrível, não consigo aprender isso",frustrado
+"Não faz sentido nenhum esse conceito",frustrado
+"Desisto, é muito complicado",frustrado
+"Não consegui resolver de jeito nenhum",frustrado
+"Estou perdido, essa parte é confusa demais",frustrado
+"Odeio essa matéria, nada entra na minha cabeça",frustrado
+"Achei muito difícil, fiquei horas tentando",frustrado
+"Que raiva, errei tudo de novo",frustrado
+"Não tô conseguindo acompanhar o conteúdo",frustrado
+"Esse exercício é cruel, impossível resolver",frustrado
+"Fiquei totalmente perdido na hora de implementar",frustrado
+"Tô frustrado, não consigo entender o enunciado",frustrado
+"Muito chato esse tipo de problema, não rola",frustrado
+"Nem sei por onde começar, tudo confuso",frustrado
+"Esse conteúdo tá muito acima do meu nível",frustrado
+"Tentei demais e ainda assim errei",frustrado
+"Não tô gostando nada dessa parte, complicado demais",frustrado
+"Que dor de cabeça, não consigo focar",frustrado
+"Travei na lógica e não saí do lugar",frustrado
+"Achei muito denso, não absorvi nada",frustrado
+"Esse exercício me deixou desanimado",frustrado
+"Não tô conseguindo evoluir, tá puxado",frustrado
+"Caraca, errei a questão inteira",frustrado
+"Não entendi a explicação, tá confuso",frustrado
+"Muito difícil, preciso de ajuda urgente",frustrado
+"Tô apanhando nessa matéria, socorro",frustrado
+"Não consigo nem ler o código direito",frustrado
+"Errei feio, não sei o que tô fazendo",frustrado
+"Que horror essa parte de ponteiros",frustrado
+"Tô travado faz uma hora no mesmo erro",frustrado
+"Impossível decorar tanta sintaxe",frustrado
+"Não entra na minha cabeça, sério",frustrado
+"Já li três vezes e continuo sem entender",frustrado
+"Esse exercício é pesado demais pra mim agora",frustrado
+"Tô perdido completamente, não sei nem o que perguntar",frustrado
+"Que matéria pesada, não tô dando conta",frustrado
+"Falhei miseravelmente nessa questão",frustrado
+"Não consegui implementar nem a metade",frustrado
+"Tô com a cabeça fervendo, nada faz sentido",frustrado
+"Errei várias vezes seguidas, desanimei",frustrado
+"Essa parte é traiçoeira demais",frustrado
+"Não consigo conectar os conceitos",frustrado
+"Difícil pra caramba, tô sofrendo aqui",frustrado
+"Não entendo essa lógica de jeito nenhum",frustrado
+"Que exercício chato e mal explicado",frustrado
+"Tô bloqueado, não sai nada da minha cabeça",frustrado
+"Essa matéria é um bicho de sete cabeças",frustrado
+"Não tô captando a ideia do algoritmo",frustrado
+"Muito ruim, fiquei estagnado",frustrado
+"Não consigo nem escrever uma linha que funcione",frustrado
+"Esse erro de compilação me matou",frustrado
+"Tô péssimo nessa parte, não vou na prova assim",frustrado
+"Não absorvi o conteúdo, foi superficial demais",frustrado
+"Muito complicado, precisava de mais exemplos",frustrado
+"Errei e nem entendi por que errei",frustrado
+"Tô desistindo, melhor estudar outra coisa",frustrado
+"Não tô conseguindo raciocinar direito",frustrado
+"Que exercício injusto, cobrou coisa que não vimos",frustrado
+"Não saiu nada, fiquei olhando pra tela",frustrado
+"Tô muito ruim em programação",frustrado
+"Não entendi a sintaxe desse comando",frustrado
+"Esse exercício é uma armadilha",frustrado
+"Tentei e tentei, não rolou mesmo",frustrado
+"Tô triste, achei que ia conseguir",frustrado
+"Que matéria sofrida, nada flui",frustrado
+"Não tô vendo lógica nenhuma nisso",frustrado
+"Errei na sintaxe e demorei pra achar o erro",frustrado
+"Travado total, não saio do mesmo ponto",frustrado
+"Foi ok, mais ou menos na média",neutro
+"Consegui fazer, mas demorei um pouco",neutro
+"Achei razoável, nem fácil nem difícil",neutro
+"Resolvi com algumas dificuldades",neutro
+"Tá dentro do esperado pro meu nível",neutro
+"Não foi tão simples mas deu pra fazer",neutro
+"Acertei a maior parte, errei uns detalhes",neutro
+"Tipo, deu pra fazer, mas precisei pensar",neutro
+"Mediano, nada de especial",neutro
+"Foi normal, exercício comum",neutro
+"Consegui resolver mas com algumas dúvidas",neutro
+"Achei equilibrado, deu pra acompanhar",neutro
+"Resolvi com esforço, mas saiu",neutro
+"Foi razoavelmente claro, deu pra entender",neutro
+"Cheguei no resultado depois de tentar duas vezes",neutro
+"Mais ou menos, tive que consultar o material",neutro
+"Não foi nem bom nem ruim, padrão",neutro
+"Acabei resolvendo, mas levei tempo",neutro
+"Achei ok, dentro do que esperava",neutro
+"Consegui, mas com algumas consultadas",neutro
+"Foi um exercício honesto, justo",neutro
+"Resolvi, mas precisei revisar a teoria",neutro
+"Travei numa parte mas destravei depois",neutro
+"Achei meio chatinho mas fiz",neutro
+"Foi razoável, deu trabalho",neutro
+"Acertei depois de pensar bastante",neutro
+"Foi padrão, nada surpreendente",neutro
+"Consegui resolver, mas não foi rápido",neutro
+"Achei meio chato mas tranquilo",neutro
+"Resolvi normal, sem muita complicação",neutro
+"Foi ok, tive uma dúvida no meio",neutro
+"Achei aceitável, fiz sem grandes problemas",neutro
+"Consegui no segundo try, beleza",neutro
+"Foi um exercício médio, sem sustos",neutro
+"Acertei mas precisei pensar bem",neutro
+"Resolvi tranquilo depois de reler",neutro
+"Achei meio cansativo mas fiz",neutro
+"Foi assim assim, nada incrível",neutro
+"Deu pra resolver com calma",neutro
+"Consegui acertar boa parte",neutro
+"Foi um exercício normal pra esse nível",neutro
+"Levou um tempo mas consegui",neutro
+"Tive umas dúvidas mas resolvi",neutro
+"Achei equilibrado, exigiu atenção",neutro
+"Foi tranquilo depois que entendi o enunciado",neutro
+"Resolvi com pesquisa rápida no material",neutro
+"Foi mais ou menos, na média do esperado",neutro
+"Acabei errando uma parte só",neutro
+"Achei aceitável, não muito puxado",neutro
+"Foi um exercício comum, sem destaque",neutro
+"Consegui fazer, levou meia hora",neutro
+"Tipo, foi ok, não me empolguei",neutro
+"Resolvi sem precisar de ajuda externa",neutro
+"Achei medianamente desafiador",neutro
+"Foi razoável, exercício digno",neutro
+"Acertei depois de algumas tentativas",neutro
+"Resolvi, mas não fluiu de primeira",neutro
+"Foi normal, dentro do conteúdo da aula",neutro
+"Achei suficiente pra fixar a matéria",neutro
+"Consegui terminar, mas sem brilho",neutro
+"Foi meio meio, deu pra fazer",neutro
+"Resolvi com calma, sem pressa",neutro
+"Acertei a essência do problema",neutro
+"Foi padrão, exercício de fixação",neutro
+"Achei ok, exigiu raciocínio",neutro
+"Consegui no final, valeu o esforço",neutro
+"Foi aceitável, condizente com a aula",neutro
+"Resolvi com algumas pausas pra pensar",neutro
+"Achei razoável o nível",neutro
+"Foi um exercício honesto",neutro
+"Acertei boa parte, errei um detalhe bobo",neutro
+"Tranquilo, fiz em poucos minutos",confiante
+"Achei fácil, resolvi rapidinho",confiante
+"Mandei bem, acertei de primeira",confiante
+"Beleza, fluiu de boa",confiante
+"Foi tranquilo demais, gostei do desafio",confiante
+"Resolvi sem dificuldade nenhuma",confiante
+"Acertei tudo, valeu a pena estudar",confiante
+"Tô dominando essa parte, muito bom",confiante
+"Adorei, faria mais exercícios assim",confiante
+"Saiu na primeira tentativa, show",confiante
+"Achei simples, entendi bem o conceito",confiante
+"Mandei bala, deu certo de primeira",confiante
+"Tava dominando o assunto, fácil",confiante
+"Resolvi rápido, conteúdo fixado",confiante
+"Foi sussa, gostei demais",confiante
+"Acertei sem precisar consultar nada",confiante
+"Achei top, exercício bem estruturado",confiante
+"Foi tranquilo, fluiu naturalmente",confiante
+"Manjo bem dessa parte, sem dificuldade",confiante
+"Acertei tudo na primeira, sucesso",confiante
+"Excelente exercício, aprendi muito",confiante
+"Foi rapidinho, fechei sem erro",confiante
+"Tava confiante e mandei bem",confiante
+"Achei super fácil, queria mais",confiante
+"Resolvi numa boa, tá no sangue",confiante
+"Maravilha, gostei muito do desafio",confiante
+"Foi de boa, simples e direto",confiante
+"Acertei rapidão, satisfeito",confiante
+"Tô seguro nessa parte, sem dúvidas",confiante
+"Mandei show, fluiu fácil",confiante
+"Achei excelente, bem didático",confiante
+"Foi simples, dominei o tema",confiante
+"Resolvi tranquilamente, sem stress",confiante
+"Acertei e ainda otimizei o código",confiante
+"Tô fera nessa matéria, beleza",confiante
+"Foi moleza, gostei do nível",confiante
+"Mandei muito bem, orgulhoso",confiante
+"Achei tranquilo, exercício digno",confiante
+"Resolvi com sobra de tempo",confiante
+"Foi de primeira, sem erros",confiante
+"Acertei tudo, dominando o assunto",confiante
+"Top demais, queria mais desse tipo",confiante
+"Foi fácil, estou no controle",confiante
+"Resolvi numa fração de minutos",confiante
+"Manjei completamente, sem problemas",confiante
+"Foi excelente, aprendizado fixado",confiante
+"Acertei de boa, sem complicações",confiante
+"Tô voando nessa matéria",confiante
+"Mandei perfeito, satisfeito demais",confiante
+"Achei muito bom, pode vir mais",confiante
+"Foi rápido e prazeroso",confiante
+"Resolvi sem suar, tranquilo",confiante
+"Acertei e me senti seguro",confiante
+"Tava preparado, deu tudo certo",confiante
+"Foi simples demais pro meu nível atual",confiante
+"Mandei bem, evolução real",confiante
+"Achei legal, exercitou bem",confiante
+"Resolvi com confiança total",confiante
+"Foi tranquilo, fluiu como água",confiante
+"Acertei sem pestanejar",confiante
+"Tô confiante pra próxima questão",confiante
+"Mandei show, tema dominado",confiante
+"Achei prazeroso, queria mais assim",confiante
+"Foi muito bom, exercício bem feito",confiante
+"Resolvi rapidinho, sem dor de cabeça",confiante
+"Acertei tudo, conteúdo absorvido",confiante
+"Tô fluindo bem nessa parte",confiante
+"Mandei muito bem, sucesso total",confiante
+"Achei excelente, bem elaborado",confiante
+"Foi tranquilíssimo, gostei",confiante
+"Resolvi de primeira, satisfação",confiante
