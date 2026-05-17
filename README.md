@@ -8,7 +8,7 @@
 ## Estrutura dos arquivos
 
 ```
-AdaptiveLearn/
+PyEvolve/
 ├── pln_nb.py                    # módulo principal (API pública)
 ├── treinar_modelo.py            # script de treino + avaliação
 ├── testar_pln.py                # teste interativo (demo)
