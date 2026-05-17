@@ -1,9 +1,9 @@
 # Alunos
  - André Luiz Michels da Silva
  - Gustava Antonio da Costa Pereira
- - Luiz Felipe
- - Maria Eduarda
- - Rebeca Clara
+ - Luiz Felipe Schoder Marcon 
+ - Maria Eduarda Nunes de Souza
+ - Rebeca Clara de Souza
 
 ## Estrutura dos arquivos
 

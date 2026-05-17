@@ -8,3 +8,6 @@ scikit-fuzzy>=0.4
 networkx>=3.0
 scipy>=1.10
 seaborn>=0.13
+spacy>=26.1.1
+fastapi uvicorn>=26.1.1
+python-multipart>=26.1.1
