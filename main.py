@@ -7,9 +7,38 @@ import random
 from aluno import Aluno
 from dados import carregar_exercicios
 from pln_nb import classificar
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+
+app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+@app.get("/nivel")
+def obter_nivel(acertos: int, tempo: int):
+
+    taxa = acertos * 10
+
+    nivel = inferir_nivel(
+        sentimento=5,
+        taxa_acerto=taxa,
+        tempo_gasto=tempo
+    )
+
+    return {
+        "nivel": round(float(nivel), 2),
+        "acertos": acertos,
+        "tempo": tempo
+    }
 
 try:
-    from fuzzy import inferir_nivel  # type: ignore
+    from fuzzy import inferir_nivel
 
     FUZZY_PRONTO = True
 except ImportError:
@@ -18,7 +47,6 @@ except ImportError:
     def inferir_nivel(
         sentimento: float, taxa_acerto: float, tempo_gasto: float
     ) -> float:
-        """STUB — substituido pela Camada II (Pessoa B)."""
         base = 5.0
         base += (sentimento - 0.5) * 4.0      # confiante -> mais dificil
         base += (taxa_acerto - 0.5) * 2.0     # acertando -> mais dificil
@@ -27,19 +55,18 @@ except ImportError:
 
 
 try:
-    from ga import recomendar  # type: ignore
+    from ga import recomendar 
 
     GA_PRONTO = True
 except ImportError:
     GA_PRONTO = False
 
     def recomendar(
-        nivel_ideal: float, pool_exercicios: list[dict], n: int = 5
+        nivelIdeal: float, pool_exercicios: list[dict], n: int = 5
     ) -> list[dict]:
-        """STUB — substituido pela Camada III (Pessoa C)."""
         ordenado = sorted(
             pool_exercicios,
-            key=lambda e: abs(e["dificuldade"] - nivel_ideal),
+            key=lambda e: abs(e["dificuldade"] - nivelIdeal),
         )
         return ordenado[:n]
 
@@ -62,25 +89,38 @@ def processar_resposta(
 
     # 2) Camada I — PLN
     classe_sentimento, prob_confiante = classificar(feedback)
+    # converte sentimento
+    mapa_sentimento = {
+    "frustrado": 0,
+    "neutro": 5,
+    "confiante": 10,
+    }
+
+    valorSentimento = mapa_sentimento.get(classe_sentimento, 5)
 
     # 3) Sinais para a Camada II
-    taxa = aluno.taxa_acerto_movel(janela=5)
+    taxa = aluno.taxa_acerto_movel(janela=5) * 100
+    tempo = tempo_gasto
     # normaliza tempo gasto em [0,1] usando 20 min como teto
-    tempo_norm = min(max(tempo_gasto / 20.0, 0.0), 1.0)
 
     # 4) Camada II — Fuzzy
-    nivel_ideal = float(inferir_nivel(prob_confiante, taxa, tempo_norm))
-
+    nivelIdeal = float(
+        inferir_nivel(
+            valorSentimento,
+            taxa,
+            tempo
+        )
+    )
     # 5) Camada III — GA
     recomendados = recomendar(
-        nivel_ideal, pool_exercicios, n=n_recomendados
+        nivelIdeal, pool_exercicios, n=n_recomendados
     )
 
     return {
         "classe_sentimento": classe_sentimento,
         "prob_confiante": round(prob_confiante, 3),
         "taxa_acerto_movel": taxa,
-        "nivel_ideal": round(nivel_ideal, 2),
+        "nivelIdeal": round(nivelIdeal, 2),
         "recomendados": recomendados,
         "camadas_implementadas": {
             "fuzzy": FUZZY_PRONTO,
@@ -156,7 +196,7 @@ def demo_sessao(n_iteracoes: int = 10, seed: int | None = 42) -> Aluno:
             f"conf_confiante={resultado['prob_confiante']:.2f}"
         )
         print(
-            f"[II]  nivel_ideal={resultado['nivel_ideal']:.2f}  "
+            f"[II]  nivelIdeal={resultado['nivelIdeal']:.2f}  "
             f"(taxa_movel={resultado['taxa_acerto_movel']:.2f})"
         )
         print(f"[III] top recomendados:")
