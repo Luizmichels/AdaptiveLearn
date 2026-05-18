@@ -1,7 +1,7 @@
 {
   "nome": "Alice",
-  "acertos": 8,
-  "erros": 2,
+  "acertos": 5,
+  "erros": 5,
   "historico": [
     {
       "exercicio_id": 82,
@@ -13,65 +13,65 @@
     {
       "exercicio_id": 15,
       "dificuldade": 5,
-      "acertou": true,
-      "tempo": 5,
-      "feedback": "Travei na parte mais dificil, demorei demais"
+      "acertou": false,
+      "tempo": 11,
+      "feedback": "Foi ok, deu pra fazer com algum esforco"
     },
     {
       "exercicio_id": 4,
       "dificuldade": 4,
       "acertou": true,
-      "tempo": 19,
+      "tempo": 7,
       "feedback": "Nao entendi nada, to completamente perdido"
     },
     {
       "exercicio_id": 95,
       "dificuldade": 8,
       "acertou": true,
-      "tempo": 20,
-      "feedback": "Foi razoavel, precisei pensar bastante"
+      "tempo": 14,
+      "feedback": "Foi ok, deu pra fazer com algum esforco"
     },
     {
       "exercicio_id": 36,
       "dificuldade": 2,
-      "acertou": true,
-      "tempo": 17,
+      "acertou": false,
+      "tempo": 20,
       "feedback": "Resolvi tranquilo, gostei do exercicio"
     },
     {
       "exercicio_id": 32,
       "dificuldade": 7,
-      "acertou": true,
-      "tempo": 8,
-      "feedback": "Foi razoavel, precisei pensar bastante"
+      "acertou": false,
+      "tempo": 14,
+      "feedback": "Resolvi tranquilo, gostei do exercicio"
     },
     {
       "exercicio_id": 29,
       "dificuldade": 7,
       "acertou": false,
-      "tempo": 11,
-      "feedback": "Mandei muito bem, achei facil demais"
+      "tempo": 3,
+      "feedback": "Nao entendi nada, to completamente perdido"
     },
     {
       "exercicio_id": 18,
       "dificuldade": 5,
-      "acertou": true,
-      "tempo": 13,
-      "feedback": "Foi ok, deu pra fazer com algum esforco"
+      "acertou": false,
+      "tempo": 9,
+      "feedback": "Foi razoavel, precisei pensar bastante"
     },
     {
       "exercicio_id": 14,
       "dificuldade": 4,
       "acertou": true,
       "tempo": 15,
-      "feedback": "Foi ok, deu pra fazer com algum esforco"
+      "feedback": "Mandei rapido, foi tranquilo"
     },
     {
       "exercicio_id": 87,
       "dificuldade": 5,
-      "acertou": false,
-      "tempo": 14,
-      "feedback": "Resolvi tranquilo, gostei do exercicio"
+      "acertou": true,
+      "tempo": 9,
+      "feedback": "Foi razoavel, precisei pensar bastante"
     }
   ]
 }

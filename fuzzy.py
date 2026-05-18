@@ -107,6 +107,10 @@ def inferir_nivel(valorSentimento, taxa, tempo):
     sistema.input['taxaAcerto'] = taxa
     sistema.input['tempoGasto'] = tempo
 
-    sistema.compute()
-
-    return sistema.output['nivelIdeal']
+    try:
+        sistema.compute()
+        return sistema.output['nivelIdeal']
+    except KeyError:
+        # nenhuma regra disparou para essa combinacao de entradas:
+        # retorna nivel proporcional a taxa de acerto como fallback
+        return round((taxa / 100) * 10, 2)
