@@ -1,0 +1,24 @@
+RELATÓRIO DE AVALIAÇÃO DO MODELO PLN
+=============================================
+
+Quantidade total de amostras: 213
+Quantidade de treino: 170
+Quantidade de teste: 43
+
+Acurácia no conjunto de teste: 0.814
+
+Relatório de classificação:
+              precision    recall  f1-score   support
+
+   confiante      0.733     0.786     0.759        14
+   frustrado      0.923     0.857     0.889        14
+      neutro      0.800     0.800     0.800        15
+
+    accuracy                          0.814        43
+   macro avg      0.819     0.814     0.816        43
+weighted avg      0.818     0.814     0.815        43
+
+Validação cruzada 5-fold usando F1 macro:
+Scores: [0.769 0.771 0.834 0.691 0.811]
+Média: 0.775
+Desvio padrão: 0.049

@@ -62,6 +62,7 @@ def treinar_e_avaliar() -> None:
     # avaliação no conjunto de teste
     y_pred = modelo.predict(X_teste)
     acc = accuracy_score(y_teste, y_pred)
+
     relatorio = classification_report(
         y_teste,
         y_pred,
@@ -69,7 +70,7 @@ def treinar_e_avaliar() -> None:
         zero_division=0,
     )
 
-    # validação cruzada 5-fold para robustez 
+    # validação cruzada 5-fold
     cv_scores = cross_val_score(
         construir_pipeline(),
         textos,
@@ -78,10 +79,47 @@ def treinar_e_avaliar() -> None:
         scoring="f1_macro",
     )
 
+    # salva relatório de avaliação
+    with open(CAMINHO_RELATORIO, "w", encoding="utf-8") as arquivo:
+        arquivo.write("RELATÓRIO DE AVALIAÇÃO DO MODELO PLN\n")
+        arquivo.write("=" * 45 + "\n\n")
+        arquivo.write(f"Quantidade total de amostras: {len(textos)}\n")
+        arquivo.write(f"Quantidade de treino: {len(X_treino)}\n")
+        arquivo.write(f"Quantidade de teste: {len(X_teste)}\n\n")
+
+        arquivo.write(f"Acurácia no conjunto de teste: {acc:.3f}\n\n")
+
+        arquivo.write("Relatório de classificação:\n")
+        arquivo.write(relatorio)
+
+        arquivo.write("\nValidação cruzada 5-fold usando F1 macro:\n")
+        arquivo.write(f"Scores: {np.round(cv_scores, 3)}\n")
+        arquivo.write(f"Média: {cv_scores.mean():.3f}\n")
+        arquivo.write(f"Desvio padrão: {cv_scores.std():.3f}\n")
+
+    print(f"Relatório salvo em: {CAMINHO_RELATORIO}")
+
+    # gera e salva matriz de confusão
+    matriz = confusion_matrix(y_teste, y_pred, labels=modelo.classes_)
+
+    disp = ConfusionMatrixDisplay(
+        confusion_matrix=matriz,
+        display_labels=modelo.classes_
+    )
+
+    disp.plot(cmap="Blues", values_format="d")
+    plt.title("Matriz de Confusão - Naive Bayes")
+    plt.tight_layout()
+    plt.savefig(CAMINHO_MATRIZ, dpi=300)
+    plt.close()
+
+    print(f"Matriz de confusão salva em: {CAMINHO_MATRIZ}")
+
     # treina o modelo final com TODOS os dados e salva
     modelo_final = construir_pipeline()
     modelo_final.fit(textos, classes)
     joblib.dump(modelo_final, CAMINHO_MODELO)
+
     print(f"Modelo final salvo em: {CAMINHO_MODELO}\n")
 
 if __name__ == "__main__":

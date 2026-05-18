@@ -25,11 +25,7 @@ def obter_nivel(acertos: int, tempo: int):
 
     taxa = acertos * 10
 
-    nivel = inferir_nivel(
-        sentimento=5,
-        taxa_acerto=taxa,
-        tempo_gasto=tempo
-    )
+    nivel = inferir_nivel(5, taxa, tempo)
 
     return {
         "nivel": round(float(nivel), 2),
