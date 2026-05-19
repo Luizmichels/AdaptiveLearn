@@ -87,54 +87,93 @@ AdaptiveLearn/
 
 # Como Executar o Projeto
 
+> Todos os comandos abaixo devem ser executados no terminal PowerShell.
+
+---
+
 ## 1. Clonar o repositório
 
-```bash
+```powershell
 git clone LINK_DO_REPOSITORIO
 ```
 
+---
 
-## 2. Criar ambiente virtual
+## 2. Entrar na pasta do projeto
 
-```bash
+```powershell
+cd AdaptiveLearn
+```
+
+---
+
+## 3. Criar ambiente virtual
+
+```powershell
 python -m venv .venv
 ```
 
+---
 
-## 3. Ativar ambiente virtual
+## 4. Ativar ambiente virtual
 
-### Windows
-
-```bash
+```powershell
 .\.venv\Scripts\Activate.ps1
 ```
 
+Se aparecer `(.venv)` no início do terminal, significa que funcionou.
 
-## 4. Instalar dependências
+Exemplo:
 
-```bash
+```powershell
+(.venv) PS C:\Users\Usuario\AdaptiveLearn>
+```
+
+---
+
+## 5. Instalar dependências
+
+```powershell
 python -m pip install -r dependencias.txt
 ```
 
+---
 
-## 5. Baixar recursos do NLTK
+## 6. Baixar recursos do NLTK
 
-```bash
+```powershell
 python -c "import nltk; nltk.download('punkt'); nltk.download('punkt_tab'); nltk.download('stopwords'); nltk.download('rslp')"
 ```
 
+---
 
-## 6. Treinar o modelo
+## 7. Iniciar o backend
 
-```bash
+```powershell
+uvicorn main:app --reload
+```
+
+---
+
+## Outros comandos
+
+## 1. Treinar o modelo PLN
+
+Este comando gera:
+- `pln_nb.joblib`
+- `relatorio_avaliacao.txt`
+- `matriz_confusao.png`
+
+```powershell
 python treinar_modelo.py
 ```
 
+---
 
-## 7. Executar o backend
+## 2. Executar demo interativa do PLN
 
-```bash
-uvicorn main:app --reload
+```powershell
+python testar_pln.py
 ```
 
 ---
@@ -161,7 +200,9 @@ GET /nivel?acertos=8&tempo=20
 
 O backend se comunica com o frontend através de requisições HTTP utilizando FastAPI.
 
-O frontend do sistema está disponível em: [PyEvolve Frontend](https://github.com/Madu3304/PyEvolve-FrontEnd.git)
+O frontend do sistema está disponível em:
+
+[PyEvolve Frontend](https://github.com/Madu3304/PyEvolve-FrontEnd.git)
 
 Exemplo de chamada no frontend:
 
@@ -169,6 +210,7 @@ Exemplo de chamada no frontend:
 fetch("http://127.0.0.1:8000/nivel?acertos=8&tempo=20")
 ```
 
+---
 
 # Objetivo do Projeto
 
