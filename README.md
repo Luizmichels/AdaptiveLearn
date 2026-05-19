@@ -82,6 +82,7 @@ AdaptiveLearn/
 - Recomendação adaptativa de exercícios
 - Integração com frontend em Next.js
 - API REST utilizando FastAPI
+- Recebimento de feedback textual do aluno via API
 
 ---
 
