@@ -12,6 +12,7 @@ from dados import carregar_exercicios
 from pln_nb import classificar
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
 
 app = FastAPI()
 
@@ -22,6 +23,25 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+class FeedbackRequest(BaseModel):
+    feedback: str
+    isCorrect: bool
+    timeSpent: int
+
+@app.post("/feedback")
+def receber_feedback(dados: FeedbackRequest):
+
+    classe_sentimento, probabilidade = classificar(dados.feedback)
+
+    return {
+        "mensagem": "Feedback recebido com sucesso",
+        "feedback": dados.feedback,
+        "sentimento": classe_sentimento,
+        "confianca": round(probabilidade, 3),
+        "acertou": dados.isCorrect,
+        "tempo": dados.timeSpent
+    }
 
 @app.get("/nivel")
 def obter_nivel(acertos: int, tempo: int):
